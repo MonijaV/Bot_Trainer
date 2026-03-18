@@ -1,0 +1,190 @@
+{
+  "intents": [
+    {
+      "name": "book_flight",
+      "description": "User wants to book or reserve a flight",
+      "examples": [
+        "Book a flight to Delhi",
+        "I want to fly to Mumbai tomorrow",
+        "Can you reserve a ticket to Chennai for next Monday?",
+        "I need a flight from Bangalore to Hyderabad",
+        "Book me a one way ticket to Goa",
+        "I want to travel to New York next week",
+        "Find me a flight to Dubai on Friday",
+        "Schedule a flight to London for December 10th",
+        "I need to go to Paris next month",
+        "Book two tickets to Singapore"
+      ],
+      "entities": ["location", "date"]
+    },
+    {
+      "name": "order_food",
+      "description": "User wants to order food or a meal",
+      "examples": [
+        "Order me a pizza",
+        "I want to eat biryani",
+        "Get me a burger and fries",
+        "Can I get a masala dosa delivered?",
+        "I want to order pasta for dinner",
+        "Place an order for fried rice",
+        "I am hungry, get me some noodles",
+        "Order a veggie sandwich please",
+        "I want two plates of idli",
+        "Can you order me a chocolate cake?"
+      ],
+      "entities": ["food_item", "quantity"]
+    },
+    {
+      "name": "check_weather",
+      "description": "User wants to know the weather forecast",
+      "examples": [
+        "What is the weather in Chennai today?",
+        "Will it rain tomorrow in Mumbai?",
+        "Tell me the forecast for Delhi this weekend",
+        "How is the weather in Bangalore?",
+        "Is it going to be sunny in Goa?",
+        "What is the temperature in London right now?",
+        "Check weather for New York tomorrow",
+        "Will there be a storm in Kerala?",
+        "Weather update for Hyderabad please",
+        "Is it cold in Shimla this week?"
+      ],
+      "entities": ["location", "date"]
+    },
+    {
+      "name": "set_reminder",
+      "description": "User wants to set a reminder or alarm",
+      "examples": [
+        "Set a reminder for 7am tomorrow",
+        "Remind me to take medicine at 9pm",
+        "Create an alarm for Monday morning",
+        "Set a reminder for my meeting at 3pm",
+        "Remind me to call mom tonight",
+        "Set an alarm for 6:30am daily",
+        "Remind me about the doctor appointment on Friday",
+        "I need a reminder at noon for lunch",
+        "Set reminder every Monday at 8am",
+        "Remind me to submit the report by 5pm"
+      ],
+      "entities": ["time", "date", "task"]
+    },
+    {
+      "name": "play_music",
+      "description": "User wants to play a song or music",
+      "examples": [
+        "Play some jazz music",
+        "I want to listen to Arijit Singh",
+        "Play the song Kesariya",
+        "Put on some relaxing music",
+        "Play top 10 Hindi songs",
+        "I want to hear some pop music",
+        "Play my workout playlist",
+        "Can you play some classical music?",
+        "Play the latest Taylor Swift album",
+        "Put on some background music while I work"
+      ],
+      "entities": ["artist", "song_name", "genre"]
+    },
+    {
+      "name": "check_balance",
+      "description": "User wants to check bank or wallet balance",
+      "examples": [
+        "What is my account balance?",
+        "Check my bank balance",
+        "How much money do I have?",
+        "Show me my wallet balance",
+        "Tell me my current balance",
+        "What is the balance in my savings account?",
+        "Check how much is left in my account",
+        "How much do I have in my wallet?",
+        "Show my available balance",
+        "What is my UPI balance?"
+      ],
+      "entities": ["account_type"]
+    },
+    {
+      "name": "send_message",
+      "description": "User wants to send a text or message to someone",
+      "examples": [
+        "Send a message to John saying I will be late",
+        "Text mom that I am on my way",
+        "Message Priya and tell her the meeting is cancelled",
+        "Send a WhatsApp to Rahul",
+        "Tell my boss I will join in 10 minutes",
+        "Send a text to +91 9876543210",
+        "Message David and ask if he is free tonight",
+        "WhatsApp Anita the address",
+        "Send an SMS to my sister",
+        "Text the team that the call is postponed"
+      ],
+      "entities": ["contact_name", "message_content"]
+    },
+    {
+      "name": "get_directions",
+      "description": "User wants navigation or directions to a place",
+      "examples": [
+        "How do I get to the nearest hospital?",
+        "Give me directions to Chennai airport",
+        "Navigate to IIT Madras",
+        "How far is the nearest petrol station?",
+        "Take me to Lulu Mall Kochi",
+        "Directions to the nearest ATM please",
+        "How do I reach Mumbai Central station?",
+        "Navigate home from current location",
+        "Find route to Taj Mahal Hotel",
+        "Get me directions to the nearest pharmacy"
+      ],
+      "entities": ["destination", "origin"]
+    },
+    {
+      "name": "greet",
+      "description": "User is greeting the assistant",
+      "examples": [
+        "Hello",
+        "Hi there",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "What is up?",
+        "Howdy",
+        "Hi bot",
+        "Hello assistant",
+        "Hey how are you?"
+      ],
+      "entities": []
+    },
+    {
+      "name": "goodbye",
+      "description": "User is ending the conversation",
+      "examples": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Talk to you soon",
+        "I am done for now",
+        "That will be all",
+        "Thanks bye",
+        "Catch you later",
+        "I am leaving now",
+        "Good night"
+      ],
+      "entities": []
+    }
+  ],
+  "entities": {
+    "location": ["Delhi", "Mumbai", "Chennai", "Bangalore", "Hyderabad", "Goa", "London", "Dubai", "Paris", "Singapore"],
+    "date": ["today", "tomorrow", "Monday", "Friday", "next week", "December 10th", "this weekend"],
+    "food_item": ["pizza", "biryani", "burger", "dosa", "pasta", "fried rice", "noodles", "sandwich", "idli", "cake"],
+    "quantity": ["one", "two", "three", "a plate of", "two plates of"],
+    "time": ["7am", "9pm", "6:30am", "3pm", "noon", "5pm", "8am"],
+    "task": ["take medicine", "call mom", "meeting", "doctor appointment", "submit report", "lunch"],
+    "artist": ["Arijit Singh", "Taylor Swift"],
+    "song_name": ["Kesariya"],
+    "genre": ["jazz", "pop", "classical", "Hindi", "relaxing"],
+    "account_type": ["savings", "wallet", "UPI", "bank"],
+    "contact_name": ["John", "mom", "Priya", "Rahul", "boss", "David", "Anita", "sister"],
+    "message_content": ["I will be late", "I am on my way", "meeting is cancelled"],
+    "destination": ["hospital", "Chennai airport", "IIT Madras", "Lulu Mall", "Mumbai Central", "Taj Mahal Hotel", "pharmacy", "ATM"],
+    "origin": ["current location", "home"]
+  }
+}
