@@ -136,7 +136,3 @@ streamlit run app/main.py
 ```
 
 ---
-
-## 👩‍💻 Author
-
-Built by **Monija V** as part of an AI/ML project on LLM-based NLU systems.
