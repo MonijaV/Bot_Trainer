@@ -1,0 +1,31 @@
+id,text,expected,predicted,confidence,correct
+1,Book a flight to Delhi tomorrow,book_flight,book_flight,0.99,✅
+2,I want to fly to Mumbai,book_flight,book_flight,0.98,✅
+3,Reserve a ticket to Chennai for Friday,book_flight,book_flight,0.98,✅
+4,Order me a pizza,order_food,order_food,0.97,✅
+5,I want to eat biryani tonight,order_food,order_food,0.96,✅
+6,Get me two burgers please,order_food,order_food,0.98,✅
+7,What is the weather in Chennai today?,check_weather,check_weather,0.98,✅
+8,Will it rain in Mumbai tomorrow?,check_weather,check_weather,0.98,✅
+9,How is the weather in Delhi?,check_weather,check_weather,0.98,✅
+10,Set a reminder for 7am tomorrow,set_reminder,set_reminder,0.98,✅
+11,Remind me to take medicine at 9pm,set_reminder,set_reminder,0.98,✅
+12,Set an alarm for Monday morning,set_reminder,set_reminder,0.98,✅
+13,Play some jazz music,play_music,play_music,0.97,✅
+14,Play the song Kesariya,play_music,play_music,0.98,✅
+15,I want to listen to Arijit Singh,play_music,play_music,0.98,✅
+16,What is my bank balance?,check_balance,check_balance,0.96,✅
+17,Check my wallet balance,check_balance,check_balance,0.98,✅
+18,How much money is in my savings account?,check_balance,check_balance,0.98,✅
+19,Send a message to John saying I will be late,send_message,send_message,0.98,✅
+20,Text mom that I am on my way,send_message,send_message,0.98,✅
+21,Message Priya the meeting is cancelled,send_message,send_message,0.98,✅
+22,How do I get to the nearest hospital?,get_directions,get_directions,0.98,✅
+23,Navigate to Chennai airport,get_directions,get_directions,0.98,✅
+24,Give me directions to IIT Madras,get_directions,get_directions,0.98,✅
+25,Hello,greet,greet,0.99,✅
+26,Good morning,greet,greet,0.98,✅
+27,Hey how are you?,greet,greet,0.98,✅
+28,Bye,goodbye,goodbye,0.99,✅
+29,See you later,goodbye,goodbye,0.98,✅
+30,Thanks goodbye,goodbye,goodbye,0.98,✅
